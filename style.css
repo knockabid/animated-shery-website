@@ -65,7 +65,7 @@ html {
 }
 
 #hero-Middle {
-  background-color: rgb(247, 247, 247);
+  /* background-color: rgb(247, 247, 247); */
   width: 30vw;
   height: 45vw;
   position: relative;
@@ -120,17 +120,23 @@ html {
 
 #our-motive {
   padding: 7vw;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 50px;
+  justify-content: flex-start;
 }
 #our-motive h2 {
-  font-size: 2vw;
+  font-size: 1.3vw;
   color: rgb(116, 116, 116);
   font-weight: 400;
   text-transform: uppercase;
+  width: 50%;
 }
 #actual-text-our-motive {
   display: flex;
   align-items: center;
-  padding-left: 5vw;
+  justify-content: flex-start;
+  padding-left: 7vw;
 }
 
 #actual-text-our-motive p {
@@ -168,4 +174,116 @@ html {
   background-size: cover;
   object-fit: cover;
   background-repeat: no-repeat;
+}
+#picture {
+  padding: 7vw 15vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#picture .div-picture-left .left-picture-wrapper {
+  width: 20vw;
+}
+#picture .div-picture-left .left-picture-wrapper img {
+  width: 80%;
+  height: 50vh;
+  object-fit: cover;
+}
+#picture .div-picture-right .right-picture-wrapper {
+  width: 25vw;
+  text-align: right;
+}
+#picture .div-picture-right .right-picture-wrapper p {
+  padding-left: 20%;
+}
+#picture .div-picture-right .right-picture-wrapper img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+#picture p {
+  font-size: 1.2vw;
+  font-weight: 400;
+  margin: 1.3vw 0;
+}
+
+#picture h1 {
+  margin: 1.3vw 0;
+}
+
+#banner {
+  margin-top: 8vw;
+  display: flex;
+}
+#banner .b-image {
+  width: 60%;
+  height: 80vh;
+}
+#banner .b-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 75%;
+}
+.b-text {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.b-text h1 {
+  margin: 1.2vw 0;
+  font-size: 3vw;
+  font-weight: 400;
+}
+.b-text p {
+  width: 60%;
+  font-size: 1.3vw;
+}
+
+.text-wrapper-b {
+  padding: 0vw 3vw;
+}
+
+#future {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+}
+#future video {
+  position: absolute;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.f-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 3vw 5vw;
+  border-radius: 10px;
+  z-index: 999;
+  background-color: white;
+}
+
+.f-text h1 {
+  font-size: 3vw;
+}
+.f-text button {
+  font-size: 1.1vw;
+  padding: 15px 25px;
+  background-color: white;
+  text-align: center;
+  border-radius: 50px;
+  margin: 10px 0;
 }

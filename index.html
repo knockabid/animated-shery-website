@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animated Website</title>
@@ -15,17 +16,17 @@
         <div id="home">
           <div id="nav">
             <div class="left">
-              <a href="#">Home</a>
-              <a href="#">Product</a>
-              <a href="#">Pricing</a>
+              <a href="#" class="nlink">Home</a>
+              <a href="#" class="nlink">Product</a>
+              <a href="#" class="nlink">Pricing</a>
             </div>
             <div class="middle">
-              <h3 id="nekamama-logo">Saluke.</h3>
+              <h3 id="nekamama-logo" class="nlink">Saluke.</h3>
             </div>
-            <div class="Right"><a href="#"> My joinery</a></div>
+            <div class="Right"><a href="#" class="nlink"> My joinery</a></div>
           </div>
           <div id="hero">
-            <div id="hero-left">
+            <div id="hero-left" class="animeateff">
               <h2>01.<br />Sustainability</h2>
               <p>
                 Committed to sustainability,Eco-friendly<br />
@@ -35,15 +36,15 @@
                 <img src="./images/pinkgreenplant.jpg" alt="her0-left-image" />
               </div>
             </div>
-            <div id="hero-Middle">
+            <div id="hero-Middle" class="animeateff">
               <div id="heading-middle">
-                <h1>Ephemeral.</h1>
-                <h1>Equilibrium.</h1>
+                <h1 class="text-target">Ephemeral.</h1>
+                <h1 class="text-target">Equilibrium.</h1>
               </div>
               <img src="./images/pinkplant.jpg" alt="" />
               <p>Commited to sustainability,Eco-friendly choces for better tomorrow</p>
             </div>
-            <div id="hero-right">
+            <div id="hero-right" class="animeateff">
               <div class="icon-div">
                 <i class="ri-arrow-right-up-line"></i>
               </div>
@@ -57,7 +58,55 @@
             <p>At Sheryans, we are deeply committed to sustainability. We believe in a greener, more sustainable future,<span id="first-span"></span> and it is at the core of everything we do. Our practices are designed with environmental <span id="second-span"></span>responsibility in mind, from sourcing eco-friendly <span id="third-span"></span>materials to reducing our carbon footprint."</p>
           </div>
         </div>
+        <div id="picture">
+          <div class="div-picture-left">
+            <div class="left-picture-wrapper">
+              <img src="./images/sea.jpg" alt="" class="test" />
+              <h1>Sugary.</h1>
+              <p>Commited to sustainability,Eco-friendly choces for better tomorrow</p>
+            </div>
+          </div>
+          <div class="div-picture-right">
+            <div class="right-picture-wrapper">
+              <img src="./images/cloud.jpg" alt="" />
+              <h1>Hungry.</h1>
+              <p>Commited to sustainability,Eco-friendly choces for better tomorrow</p>
+            </div>
+          </div>
+        </div>
+        <div id="banner">
+          <div class="b-image">
+            <img src="./images/bottle.jpg" alt="" />
+            <img src="./images/bluegirl.jpg" alt="" />
+            <img src="./images/cloud.jpg" alt="" />
+          </div>
+          <div class="b-text">
+            <div class="text-wrapper-b">
+              <h1>
+                Biodegradable<br />
+                packaging
+              </h1>
+              <p>Commited to sustainability,Eco-friendly choces for better tomorrow</p>
+            </div>
+          </div>
+        </div>
+        <div id="future">
+          <video src="./images/back.mp4" autoplay muted loop></video>
+          <div class="f-text">
+            <h1>Hax-Movement</h1>
+            <button>Join the movement</button>
+          </div>
+        </div>
       </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+
+    <script src="app.js"></script>
   </body>
 </html>
